@@ -8,7 +8,7 @@ Legalframe - the first legaltech framework of JavaScript for building check-up s
 
 * **Checking Arrays** Ability to validate JSON data arrays.
 
-[For more information, please contact the developer](vk.com/teivaz29)
+[For more information, please contact the developer](https://vk.com/teivaz29)
 
 ## Instalation
 
