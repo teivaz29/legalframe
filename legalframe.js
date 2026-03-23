@@ -20,7 +20,7 @@ console.log("Legalframe-like Service data checks");
 
 function createHash(data) {
 
-   const checkString = `${data.api}|${data.messageID}|${data.senderID}|${data.recipientID}|${data.description}`;
+   const checkString = `${data.messageID}|${data.senderID}|${data.recipientID}|${data.description}`;
 
    return crypto.createHash("sha256").update(checkString).digest("hex");
 }
