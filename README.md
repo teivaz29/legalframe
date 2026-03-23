@@ -2,9 +2,11 @@
 
 Legalframe - the first legaltech framework of JavaScript for building check-up scripts JSON-based dataforms legally significant messages and JSON Schema messages, as well as their integration into scripts used for working with digital document management. Its main advantages:
 
-**Simplicity:** The framework is easily customized for your forms, as well as their schemas, for testing.
-**Availability of hashing** Each message is signed with a hash based on the "crypto" JS-library; 
-**Checking Arrays** Ability to validate JSON data arrays.
+* **Simplicity:** The framework is easily customized for your forms, as well as their schemas, for testing.
+
+* **Availability of hashing** Each message is signed with a hash based on the "crypto" JS-library; 
+
+* **Checking Arrays** Ability to validate JSON data arrays.
 
 [For more information, please contact the developer](vk.com/teivaz29)
 
