@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="[banner.jpg](https://sun9-32.userapi.com/s/v1/ig2/qOCyiTRH6U-vTi2L2pKU44W0MVm156Mf0Db3w3lM0DX9H-Y-Xs-ipLieRV08yoUjmYuWaXwDZl_GOhARbNDdQfHV.jpg?quality=95&as=32x20,48x31,72x46,108x69,160x102,240x153,360x229,480x305,540x344,640x407,720x458,1080x687,1280x814,1440x916,1696x1079&from=bu&u=oxR-koFMvXvvzOZ-5Nz_TS8jlsIDtW5rWlF7jpgNRF8&cs=640x0)" width="600" alt="Legalframe Logo">
+</p>
+
 # Legalframe &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 Legalframe - the first legaltech framework of JavaScript for building check-up scripts JSON-based dataforms legally significant messages and JSON Schema messages, as well as their integration into scripts used for working with digital document management. Its main advantages:
 
