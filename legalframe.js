@@ -103,3 +103,5 @@ const data = [
 ];
 
 legalCheck(data);
+
+module.exports = legalCheck;
