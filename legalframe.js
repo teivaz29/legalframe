@@ -9,7 +9,7 @@ ajv - a library for comparing JSON data against a schema.
 
 */ 
 
-const fs = require("fs");
+const fs = require("fs").promises;
 const crypto = require("crypto");
 const Ajv = require("ajv");
 const ajv = new Ajv();
