@@ -35,7 +35,7 @@ npm install ajv
 
 To connect the framework to your project, use:
 ```js
-const legalframe = required("legalframe");
+const legalframe = require("legalframe");
 ```
 
 ## Examples
