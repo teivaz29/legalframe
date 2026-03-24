@@ -114,4 +114,4 @@ An example of how to use the script is located in the [examples](./examples) fol
 
 ## License
 
-Legalframe is covered by the MIT License.
+Legalframe is covered by the [MIT License](./LICENSE).
