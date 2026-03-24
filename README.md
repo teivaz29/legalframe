@@ -12,7 +12,11 @@ Legalframe - the first legaltech framework of JavaScript for building check-up s
 
 ## Instalation
 
-Deployment and installation of the framework is easy and accessible **to a novice developer**.
+Deployment and installation of the framework is easy and accessible **to a novice developer**. To deploy to Node.js, you need the ajv library. Install it via the terminal as follows:
+
+```
+npm install ajv
+```
 
 ## Examples
 For example, the framework validates an array of data against JSON:
