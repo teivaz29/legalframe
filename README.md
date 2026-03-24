@@ -1,4 +1,8 @@
-# Legalframe
+![License: MIT](https://shields.io)
+![Node.js Version](https://shields.io)
+![Status](https://shields.io)
+
+# Legalframe 
 
 Legalframe - the first legaltech framework of JavaScript for building check-up scripts JSON-based dataforms legally significant messages and JSON Schema messages, as well as their integration into scripts used for working with digital document management. Its main advantages:
 
