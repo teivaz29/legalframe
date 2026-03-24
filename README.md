@@ -110,7 +110,7 @@ against the JSON-schema:
 }
 ```
 
-An example of how to use the script is located in the examples folder. It also contains a Dockerfile for deployment in a container environment.
+An example of how to use the script is located in the [examples](./examples) folder. It also contains a Dockerfile for deployment in a container environment.
 
 ## License
 
