@@ -71,7 +71,7 @@ async function legalCheck(data) {
     try {
         console.log("The data matches the declared JSON Schema");
         await Promise.all([
-            fs.writeFile("data.json", JSON.stringify(data, mull, 2)),
+            fs.writeFile("data.json", JSON.stringify(data, null, 2)),
             fs.writeFile("schema.json", JSON.stringify(schema, null, 2))
         ]);
         console.log('Data and JSON-schema saved.');
