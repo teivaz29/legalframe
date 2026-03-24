@@ -1,4 +1,4 @@
-# Legalframe &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]]
+# Legalframe &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
 Legalframe - the first legaltech framework of JavaScript for building check-up scripts JSON-based dataforms legally significant messages and JSON Schema messages, as well as their integration into scripts used for working with digital document management. Its main advantages:
 
 * **Simplicity:** The framework is easily customized for your forms, as well as their schemas, for testing.
