@@ -14,7 +14,6 @@ const crypto = require("crypto");
 const Ajv = require("ajv");
 const ajv = new Ajv();
 
-console.log("Legalframe-like Service data checks");
 
 // Generating a hash using the crypto library:
 
@@ -49,6 +48,37 @@ const schema = {
 
 const validate = ajv.compile(schema);
 
+//Main function check: 
+
+async function legalCheck(data) { 
+    console.log("Legalframe-like Service data checks");
+    data.forEach(item => {
+        item.hashMessage = createHash(item);
+        
+     });
+   
+    //Validating data: 
+   
+    const valid = validate(data);
+    console.log("JSON Data: " + JSON.stringify(data, null, 2) + ", checked according to the schema.");
+   
+    // We check the validity of the data against the schema:
+    if (!valid) {
+        console.log("The following errors were found in the data: ", validate.errors);
+        console.log('Data not saved.');
+    }
+
+    try {
+        console.log("The data matches the declared JSON Schema");
+        await Promise.all([
+            fs.writeFile("data.json", JSON.stringify(data, mull, 2)),
+            fs.writeFile("schema.json", JSON.stringify(schema, null, 2))
+        ]);
+        console.log('Data and JSON-schema saved.');
+    } catch {
+        console.log('Saving is impossible due to damage to the storage medium or lack of write permissions.');
+    }
+}
 // We add an array of data:
 
 const data = [
@@ -72,28 +102,4 @@ const data = [
   }
 ];
 
-
-data.forEach(item => {
-  item.hashMessage = createHash(item);
-});
-
-//Validating data: 
-
-const valid = validate(data);
-
-console.log("JSON Data: " + JSON.stringify(data, null, 2) + ", checked according to the schema.");
-
-// We check the validity of the data against the schema:
-
-if (!valid) {
-   console.log("The following errors were found in the data: ", validate.errors);
-   console.log('Data not saved.');
-} else {
-  console.log("The data matches the declared JSON Schema");
-  const result = JSON.stringify(data, null, 2);
-  fs.writeFileSync("data.json", result);
-  console.log('Message data saved.');
-  const schresult = JSON.stringify(schema, null, 2);
-  fs.writeFileSync("schema.json", schresult);
-  console.log('The verification scheme has been saved.');
-}
+legalCheck(data);
