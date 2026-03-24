@@ -110,6 +110,8 @@ against the JSON-schema:
 }
 ```
 
+An example of how to use the script is located in the examples folder. It also contains a Dockerfile for deployment in a container environment.
+
 ## License
 
 Legalframe is covered by the MIT License.
