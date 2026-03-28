@@ -65,17 +65,24 @@ async function legalCheck(data) {
     // We check the validity of the data against the schema:
     if (!valid) {
         console.log("The following errors were found in the data: ", validate.errors);
+        console.table(validate.errors.map(err => ({
+           field: err.instancePatch || "root",
+           error: err.message,
+           missing: err.params.missingProperty || "N/A"
+         })));
         console.log('Data not saved.');
+        return;
     }
 
+   console.log("The data matches the declared JSON Schema");
+   console.log("JSON Data structure is verified.");
+
     try {
-        console.log("The data matches the declared JSON Schema");
         await Promise.all([
             fs.writeFile("data.json", JSON.stringify(data, null, 2)),
             fs.writeFile("schema.json", JSON.stringify(schema, null, 2))
         ]);
-        console.log('Data and JSON-schema saved.');
-    } catch {
+    } catch (err) {
         console.log('Saving is impossible due to damage to the storage medium or lack of write permissions.');
     }
 }
