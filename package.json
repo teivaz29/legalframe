@@ -1,12 +1,18 @@
 {
-  "name": "legalframe", 
-  "version": "1.0.0",
+  "name": "legalframe",
+  "version": "1.0.3",
   "description": "JSON-Based dataforms and legally significant messages framework",
   "main": "legalframe.js",
   "scripts": {
     "start": "node legalframe.js"
   },
-  "keywords": ["legaltech", "ajv", "crypto", "json-schema", "law"],
+  "keywords": [
+    "legaltech",
+    "ajv",
+    "crypto",
+    "json-schema",
+    "law"
+  ],
   "author": "Alexander Primakov <teivaz29>",
   "license": "MIT",
   "dependencies": {
